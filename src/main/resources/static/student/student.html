@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <a href="./../index.html">Back</a>
+    <h1>Student</h1>
+    <h2>make a student here</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="name">
+    <br>
+    <label for="grade">Grade</label>
+    <input type="number" id="grade" placeholder="grade">
+    <br>
+    <label for="school">School</label>
+    <input type="number" id="school" placeholder="school_id (optional)">
+    <br>
+    <button onclick="addStudent()" id="myButton">add student</button>
+    <p id="studentAdded" class="hide"></p>
+
+    <h2>get all students</h2>
+    <button onclick="getAllStudents()">get students</button>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>School</th>
+            <th>grade</th>
+            <th>Id</th>
+        </tr>
+        <tbody id="table"></tbody>
+    </table>
+
+    <h2>search for a student by name or id</h2>
+    <label for="student">Student</label>
+    <input type="text" id="student" placeholder="student or student_id">
+    <button onclick="getStudent()">search</button>
+    <p id="searchresults"></p>
+
+    <script src="student.js"></script>
+</body>
+</html>

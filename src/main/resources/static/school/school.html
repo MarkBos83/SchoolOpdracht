@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="school.css">
+</head>
+<body>
+    <a href="./../index.html">Back</a>
+    <h1>School</h1>
+    <h2>make a school here</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="name">
+    <br>
+    <label for="city">City</label>
+    <input type="text" id="city" placeholder="city">
+    <br>
+    <button onclick="addSchool()" id="myButton">add school</button>
+    <p id="schoolAdded" class="hide"></p>
+
+    <h2>get all schools</h2>
+    <button onclick="getAllSchools()">get schools</button>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Id</th>
+        </tr>
+        <tbody id="table"></tbody>
+    </table>
+
+    <h2>search for a school by name or id</h2>
+    <label for="school">School</label>
+    <input type="text" id="school" placeholder="school or school_id">
+    <button onclick="getSchool()">search</button>
+    <p id="searchresults"></p>
+
+    <script src="school.js"></script>
+</body>
+</html>

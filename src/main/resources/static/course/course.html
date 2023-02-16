@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="course.css">
+</head>
+<body>
+    <a href="./../index.html">Back</a>
+    <h1>Course</h1>
+    <h2>make a course here</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="name">
+    <br>
+    <label for="credits">Credits</label>
+    <input type="number" id="credits" placeholder="credits">
+    <br>
+    <button onclick="addCourse()" id="myButton">add course</button>
+    <p id="courseAdded" class="hide"></p>
+
+    <h2>get all courses</h2>
+    <button onclick="getAllCourses()">get courses</button>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>credits</th>
+            <th>Id</th>
+        </tr>
+        <tbody id="table"></tbody>
+    </table>
+
+    <h2>search for a course by name or id</h2>
+    <label for="course">Course</label>
+    <input type="text" id="course" placeholder="course or course_id">
+    <button onclick="getCourse()">search</button>
+    <p id="searchresults"></p>
+
+    <script src="course.js"></script>
+</body>
+</html>
